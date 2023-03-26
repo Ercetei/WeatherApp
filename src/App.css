@@ -1,0 +1,44 @@
+form{
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top:20px;
+}
+
+.error {
+  background:lightcoral;
+  padding: 10px;
+  width:300px;
+  margin:20px auto;
+  color:#fff;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  padding: 20px;
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+button[type="submit"] {
+  padding: 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0e5086;
+}
