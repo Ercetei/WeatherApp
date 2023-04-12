@@ -62,7 +62,7 @@ const WeatherBackground: FC<WeatherBackgroundProps> = ({data}) => {
       };
 
       // If it is less than one hour before/after sunrise or sunset, sky is orange
-      if (sys.sunrise - dt < 3600 ||  sys.sunset - dt < 3600) {
+      if (dt > sys.sunrise - 3600 && dt < sys.sunrise ||  dt > sys.sunset && dt < sys.sunset + 3600) {
          shade = "#F15A29";
       // If current time is between sunrise and sunset; sky is blue
       } else if (dt >= sys.sunrise && dt <= sys.sunset) {
